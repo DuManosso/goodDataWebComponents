@@ -2,41 +2,13 @@
 <html lang="pt">
 <head>
     <script type="module" src="https://mushy-lizard.trial.cloud.gooddata.com/components/0001.js?auth=sso"></script>
-    <!-- <script type="module">
-        import { setContext } from "https://mushy-lizard.trial.cloud.gooddata.com/components/0001.js";
-        import factory, { ContextDeferredAuthProvider, redirectToTigerAuthentication } from "https://mushy-lizard.trial.cloud.gooddata.com/components/tigerBackend.js";
-        
-        setContext({
-            backend: factory()
-                .onHostname("https://mushy-lizard.trial.cloud.gooddata.com")
-                .withAuthentication(new ContextDeferredAuthProvider(redirectToTigerAuthentication)),
-            workspaceId: "0001",
-        });
-    </script> -->
-    <!-- <script type="module">
-        // Import the library along with `setContext` method
-        import { setContext } from "https://mushy-lizard.trial.cloud.gooddata.com/components/0001.js";
-        // Import GoodData.CN backend for GoodData.CN and GoodData Cloud
-        import factory, { ContextDeferredAuthProvider } from "https://mushy-lizard.trial.cloud.gooddata.com/components/tigerBackend.js";
-    
-        function myAuthenticationHandler(authError) {
-            console.log("TA DELSOGADO MAN, VAI FAZER LOGIN")
-        }
-        
-        // Set up GoodData.CN backend and default workspace id
-        setContext({
-            backend: factory()
-                .onHostname("https://mushy-lizard.trial.cloud.gooddata.com")
-                .withAuthentication(new ContextDeferredAuthProvider(myAuthenticationHandler)),
-            workspaceId: "0001",
-        }); -->
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Embed</title>
 </head>
 <body>
-    <div style="width: 50px; height: 50px; background-color: aqua;"></div>
+    <a style="width: 50px; height: 50px; background-color: aqua;" href="./dashboard.html"> DASH 2</a>
     <!-- ...and embed an dashboard -->
     <gd-dashboard 
         dashboard="c313f962-deb6-4867-a1a6-8308e00070b2"
