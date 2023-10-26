@@ -3,7 +3,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background: linear-gradient(to right, #1b79da, #ca94c0);
     overflow: hidden;
 }
 
@@ -13,26 +13,18 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #444;
+    background-color: #004ba1;
 }
 
 /* Estilo para destacar o link ativo */
 li.active a {
-    background-color: #4CAF50;
+    background-color: #004ba1;
     /* Cor de destaque para o link ativo */
-}
-
-/* Estilos para o cabeçalho da página */
-h1 {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
 }
