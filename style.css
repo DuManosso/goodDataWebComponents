@@ -20,11 +20,11 @@ li a {
 }
 
 li a:hover {
-    background-color: #004ba1;
+    background-color: #0064d7;
 }
 
 /* Estilo para destacar o link ativo */
 li.active a {
-    background-color: #004ba1;
+    background-color: #0064d7;
     /* Cor de destaque para o link ativo */
 }
