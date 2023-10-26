@@ -1,0 +1,38 @@
+/* Estilos para o menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #444;
+}
+
+/* Estilo para destacar o link ativo */
+li.active a {
+    background-color: #4CAF50;
+    /* Cor de destaque para o link ativo */
+}
+
+/* Estilos para o cabeçalho da página */
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
