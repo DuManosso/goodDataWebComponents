@@ -5,7 +5,7 @@ const firstTime = localStorage.getItem('firstTime');
 const showPopup = localStorage.getItem('showPopup');
 
 if(firstTime == 'true' && (date - parseInt(showPopup)) > 2629800000) {
-    document.getElementById('popup').style.display = 'block';
+    document.getElementById('popup').style.display = 'flex';
 	let botao = document.getElementById('botao');
 	botao.addEventListener("click", function() {
         document.getElementById('popup').style.display = 'none';
@@ -14,7 +14,7 @@ if(firstTime == 'true' && (date - parseInt(showPopup)) > 2629800000) {
     })
 } else {
     if((date - parseInt(showPopup)) > 7889400000){
-        document.getElementById('popup').style.display = 'block';
+        document.getElementById('popup').style.display = 'flex';
         let botao = document.getElementById('botao');
         botao.addEventListener("click", function() {
         document.getElementById('popup').style.display = 'none';
