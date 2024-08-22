@@ -27,17 +27,21 @@ if(firstTime == 'true' && (date - parseInt(showPopup)) > 2629800000) {
     }
 }
 
-if(showMessage == "first") document.getElementById('pupupSSOLogin').style.display = "flex";
+if(showMessage == "first"){
+	document.getElementById('pupupSSOLogin').style.display = "flex";
+}
 
-if((date - parseInt(showMessage)) >= 2629800000) document.getElementById('pupupSSOLogin').style.display = "flex";
+if((date - parseInt(showMessage)) >= 2629800000){
+	document.getElementById('pupupSSOLogin').style.display = "flex";
+}
 
 document.getElementById('alreadyUse').addEventListener("click", () => {
-	popupSSO.style.display = "none";
+	document.getElementById('pupupSSOLogin').style.display = "none";
 	localStorage.setItem('messagePortalRhLogin', "notShow");
 })
 
 document.getElementById('closeMessage').addEventListener("click", () => {
-	popupSSO.style.display = "none";
+	document.getElementById('pupupSSOLogin').style.display = "none";
 	localStorage.setItem('messagePortalRhLogin', date.toString());
 })
 
