@@ -5,9 +5,7 @@ localStorage.getItem('messagePortalRhLogin') == null ? localStorage.setItem('mes
 
 const firstTime = localStorage.getItem('firstTime');
 const showPopup = localStorage.getItem('showPopup');
-
 const showMessage = localStorage.getItem('messagePortalRhLogin');
-const popupSSO = document.getElementById('pupupSSOLogin');
 
 if(firstTime == 'true' && (date - parseInt(showPopup)) > 2629800000) {
     document.getElementById('popup').style.display = 'flex';
@@ -29,19 +27,16 @@ if(firstTime == 'true' && (date - parseInt(showPopup)) > 2629800000) {
     }
 }
 
-if(showMessage == "first") popupSSO.style.display = "flex";
+if(showMessage == "first") document.getElementById('pupupSSOLogin').style.display = "flex";
 
-if((date - parseInt(showMessage)) >= 2629800000) popupSSO.style.display = "flex";
+if((date - parseInt(showMessage)) >= 2629800000) document.getElementById('pupupSSOLogin').style.display = "flex";
 
-const buttonCloseMessage = document.getElementById('closeMessage');
-const buttonAlreadyUse = document.getElementById('alreadyUse');
-	
-buttonAlreadyUse.addEventListener("click", () => {
+document.getElementById('alreadyUse').addEventListener("click", () => {
 	popupSSO.style.display = "none";
 	localStorage.setItem('messagePortalRhLogin', "notShow");
 })
 
-buttonCloseMessage.addEventListener("click", () => {
+document.getElementById('closeMessage').addEventListener("click", () => {
 	popupSSO.style.display = "none";
 	localStorage.setItem('messagePortalRhLogin', date.toString());
 })
