@@ -5,7 +5,6 @@ localStorage.getItem('messagePortalRhLogin') == null ? localStorage.setItem('mes
 
 const firstTime = localStorage.getItem('firstTime');
 const showPopup = localStorage.getItem('showPopup');
-const showMessage = localStorage.getItem('messagePortalRhLogin');
 
 if(firstTime == 'true' && (date - parseInt(showPopup)) > 2629800000) {
     document.getElementById('popup').style.display = 'flex';
@@ -26,22 +25,4 @@ if(firstTime == 'true' && (date - parseInt(showPopup)) > 2629800000) {
     })
     }
 }
-
-if(showMessage == "first"){
-	document.getElementById('pupupSSOLogin').style.display = "flex";
-}
-
-if((date - parseInt(showMessage)) >= 2629800000){
-	document.getElementById('pupupSSOLogin').style.display = "flex";
-}
-
-document.getElementById('alreadyUse').addEventListener("click", () => {
-	document.getElementById('pupupSSOLogin').style.display = "none";
-	localStorage.setItem('messagePortalRhLogin', "notShow");
-})
-
-document.getElementById('closeMessage').addEventListener("click", () => {
-	document.getElementById('pupupSSOLogin').style.display = "none";
-	localStorage.setItem('messagePortalRhLogin', date.toString());
-})
 
